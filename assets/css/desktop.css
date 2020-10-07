@@ -1,0 +1,125 @@
+/* with min-width: 992px*/
+
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200&family=Oxygen:wght@300&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Catamaran', sans-serif;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 150px 1fr;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.st-raw-logo {
+  position: fixed;
+  width: 90px;
+  margin-top: 30px;
+  margin-left: 10px;
+  z-index: 1;
+}
+
+.logo-nav-wrapper {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 3;
+  background: #fff;
+}
+
+.logo-nav-wrapper.header-shrink {
+  padding: 10px 0;
+}
+
+
+/*all-content-display*/
+.product-section-all-content {
+  display: grid;
+  grid-template-rows: 1fr 1fr, 1fr;
+}
+
+.header-wrapper {
+  background: #f2ede4;
+  height: 200px;
+  width: 100%;
+}
+
+.header-text {
+  font-size: 30px;
+  font-weight: bold;
+  color: #aaa;
+  text-align: center;
+  padding: 10px;
+  line-height: 1.2;
+}
+
+.about-page-section {
+  display: grid;
+  margin-top: 30px;
+}
+
+.about-page-image {
+  display: block;
+  margin-left: 100px;
+  width: 450px;
+  height: 450px;
+}
+
+.image-text-wrapper {
+  display: grid;
+  margin-bottom: 30px;
+}
+
+.content-header {
+  margin-left: 35px;
+  font-size: 18px;
+}
+
+.image-text {
+  grid-column: 2/2;
+  line-height: 1.2;
+
+}
+
+.button-section {
+  border-top: 0.5px solid #aaaaaa;
+  place-self: center;
+}
+.footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+}
+.shop-button {
+  background-color: #242524;
+  border: none;
+  color: #fff;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: rgb(15, 15, 13);
+  color: fff;
+}
+
+.button1:hover {
+  background-color: rgb(204, 190, 45);
+  color: white;
+}
