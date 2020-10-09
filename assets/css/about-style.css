@@ -21,64 +21,81 @@ body {
 
 .st-raw-logo {
   position: fixed;
-  width: 90px;
+  width: 70px;
   margin-top: 30px;
   margin-left: 10px;
-  z-index: 1;
+  z-index: 5;
 }
 
 .logo-nav-wrapper {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  z-index: 3;
+  z-index: 2;
   background: #fff;
 }
-
 .logo-nav-wrapper.header-shrink {
-  padding: 10px 0;
+  padding: 1px 0;
 }
-
 
 /*all-content-display*/
 .product-section-all-content {
   display: grid;
   grid-template-rows: 1fr 1fr, 1fr;
+  background: white;
 }
 
 .header-wrapper {
-  background: #f2ede4;
-  height: 200px;
+  background: #aec0ae;
+  height: 150px;
   width: 100%;
 }
 
 .header-text {
   font-size: 16px;
   font-weight: bold;
-  color: #aaa;
-  text-align: center;
+  color: #fff;
   padding: 10px;
   line-height: 1.2;
+  text-align: center;
 }
 
+.image-text-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 .about-page-section {
   margin-top: 20px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .about-page-image {
-  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+.about-page-image-two {
   margin-left: auto;
   margin-right: auto;
   width: 250px;
   height: 250px;
 }
 
-.image-text-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 30px;
+h4 {
+  font-size: 16px;
+  font-weight: bolder;
+  border-top: 2px solid #242524;
+  padding-top: 15px;
 }
 
+p {
+  font-size: 12px;
+}
 .content-header {
   margin-left: 35px;
   font-size: 18px;
@@ -90,15 +107,21 @@ body {
   line-height: 1.2;
 }
 
+.image-text-2 {
+  margin-left: 35px;
+  margin-right: 35px;
+  line-height: 1.2;
+}
+
 .button-section {
   border-top: 0.5px solid #aaaaaa;
   place-self: center;
 }
-.footer-company-name{
- color: #8f9296;
- font-size: 14px;
- font-weight: normal;
- text-align: center;
+.footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
 }
 .shop-button {
   background-color: #242524;
@@ -123,4 +146,26 @@ body {
 .button1:hover {
   background-color: rgb(204, 190, 45);
   color: white;
+}
+
+.spacing {
+  margin-bottom: 200px;
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+footer {
+  position: sticky;
+  position: -webkit-sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #f2ede4;
+  display: grid;
+  place-items: center;
+  z-index: -1;
+}
+footer img {
+  width: 60%;
+  height: 60%;
 }
